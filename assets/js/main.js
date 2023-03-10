@@ -80,6 +80,9 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
     cardNumber.classList.add("col-md-1");
     cardNumber.classList.add(className);
 
+    cardNumber.classList.add("col-2");
+    cardNumber.classList.add(className);
+
     valueOut.appendChild(cardNumber);
 
     
