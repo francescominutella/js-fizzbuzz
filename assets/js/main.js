@@ -49,6 +49,7 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
         const div = document.createElement("div");
         div.textContent = "FizzBuzz";
         tableNumber.appendChild(div);// add in page "FizzBuzz"
+        
 
     } else if (i % 3 === 0) {
         console.log("Fizz"); // each number multiples of 3 must turn "Fizz"
