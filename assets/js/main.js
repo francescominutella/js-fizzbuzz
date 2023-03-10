@@ -39,42 +39,43 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 7. define ELSE IF console for multiples of 3 = "Buzz"
 8. display in console
 */
-const tableNumber = document.getElementById("tableNumber");
+
 const valueOut = document.getElementById("valueOut");
 
 for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
 
+    let text = "";
+    let className = "";
+
     if (i % 3 === 0 && i % 5 === 0) {
         console.log("FizzBuzz"); // each number multiples of 3 AND 5 must turn "FizzBuzz"
 
-        const div = document.createElement("col-md-1");
-        div.textContent = "FizzBuzz";
-        tableNumber.appendChild(div);// add in page "FizzBuzz"
-
+        className = className + "Fizzbuzz";
 
     } else if (i % 3 === 0) {
         console.log("Fizz"); // each number multiples of 3 must turn "Fizz"
 
-        const div = document.createElement("col-md-1");
-        div.textContent = "Fizz";
-        tableNumber.appendChild(div);// add in page "Fizz"
+        text = text + "Fizz";
+        className = className + "Fizz";
 
     } else if (i % 5 === 0) {
         console.log("Buzz"); // each number multiples of 5 must turn "Buzz"
 
-        const div = document.createElement("col-md-1");
-        div.textContent = "Buzz";
-        tableNumber.appendChild(div);// add in page "Buzz"
+        text = text + "Buzz";
+        className = className + "Buzz";
 
-    } else {
-        console.log(i);// each other numbers
-
-        const div = document.createElement("col-md-1");
-        div.textContent = i;
-        tableNumber.appendChild(div);// add in page each numbers
+    } else if (text === "") {
+        text = i;
+        className = className + "Number";
     }
-
+    
     const cardNumber = document.createElement("div");
+    cardNumber.textContent = text;
+
     cardNumber.classList.add("card");
+    cardNumber.classList.add(className);
+
     valueOut.appendChild(cardNumber);
+
+
 }
