@@ -8,6 +8,9 @@ body{
     --color-Fizz: rgb(55, 42, 151);
     --color-Buzz: rgb(22, 223, 28);
     --color-number: rgb(160, 216, 229);
+}
 
+#tableNumber{
+    font-weight: bold;
 }
 

@@ -49,6 +49,7 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
     let className = "";
     let bgColor = "";
     let borderColor = "";
+    let fontColor = "";
     
 
     if (i % 3 === 0 && i % 5 === 0) {
@@ -59,6 +60,7 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
 
         bgColor = "rgba(27, 114, 232, 1)";
         borderColor = "rgb(22, 223, 28)";
+        fontColor = "white";
         
 
     } else if (i % 3 === 0) {
@@ -69,7 +71,8 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
 
         bgColor = "rgb(55, 42, 151)";
         borderColor = "rgb(160, 216, 229)";
-        
+        fontColor = "white";
+
 
     } else if (i % 5 === 0) {
         console.log("Buzz"); // each number multiples of 5 must turn "Buzz"
@@ -79,6 +82,7 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
 
         bgColor = "rgb(22, 223, 28)";
         borderColor = "rgba(27, 114, 232, 1)";
+        fontColor = "rgb(55, 42, 151)";
         
 
     } else if (text === "") {
@@ -86,6 +90,7 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
         className = className + "Number";
 
         bgColor = "rgb(160, 216, 229)";
+        fontColor = "rgb(55, 42, 151)";
         
         
     }
@@ -116,6 +121,7 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
     columnNumber.style.borderColor = borderColor;
     columnNumber.style.borderWidth = "3px";
     columnNumber.style.borderStyle = "solid";
+    columnNumber.style.color = fontColor;
     
     /* const column = document.createElement("col-md-1");
     column.classList.add("card"); */
