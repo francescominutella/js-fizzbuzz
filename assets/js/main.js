@@ -77,7 +77,7 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
     const cardNumber = document.createElement("div");
     cardNumber.textContent = text;
 
-    cardNumber.classList.add("col-md-1");
+    cardNumber.classList.add("col-md-2");
     cardNumber.classList.add(className);
 
     cardNumber.classList.add("col-2");
