@@ -42,6 +42,7 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 
 const valueOut = document.getElementById("valueOut");
 
+
 for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
 
     let text = "";
@@ -54,7 +55,7 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
         className = className + "Fizzbuzz";
 
         /* columnNumber.style.backgroundColor = bgColor; */
-        var bgColor = "green";
+        var bgColor = "rgba(27, 114, 232, 1)";
 
     } else if (i % 3 === 0) {
         console.log("Fizz"); // each number multiples of 3 must turn "Fizz"
@@ -63,7 +64,7 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
         className = className + "Fizz";
 
         /* columnNumber.style.backgroundColor = bgColor; */
-        var bgColor = "yellow";
+        var bgColor = "rgb(212, 8, 243)";
 
     } else if (i % 5 === 0) {
         console.log("Buzz"); // each number multiples of 5 must turn "Buzz"
@@ -72,14 +73,14 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
         className = className + "Buzz";
 
         /* columnNumber.style.backgroundColor = bgColor; */
-        var bgColor = "red";
+        var bgColor = "rgb(22, 223, 28)";
 
     } else if (text === "") {
         text = i;
         className = className + "Number";
 
         /* columnNumber.style.backgroundColor = bgColor; */
-        var bgColor = "pink";
+        var bgColor = "rgba(255, 143, 0, 1)";
     }
 
     /* COLUMNS */
@@ -89,11 +90,15 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
 
     columnNumber.classList.add("col-md-2");
     columnNumber.classList.add("card");
+    columnNumber.classList.add("mx-2");
+    columnNumber.classList.add("my-2");
 
     columnNumber.classList.add(className);
     
     columnNumber.classList.add("col-2");
     columnNumber.classList.add("card");
+    columnNumber.classList.add("mx-2");
+    columnNumber.classList.add("my-2");
 
     columnNumber.classList.add(className);
     
