@@ -53,6 +53,7 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
         text = text + "FizzBuzz";
         className = className + "Fizzbuzz";
 
+
     } else if (i % 3 === 0) {
         console.log("Fizz"); // each number multiples of 3 must turn "Fizz"
 
@@ -70,25 +71,34 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
         className = className + "Number";
     }
 
+    /* COLUMNS */
+    const columnNumber = document.createElement("div");
+    /* const cardNumber = document.createElement("div"); */
+    columnNumber.textContent = text;
+
+    columnNumber.classList.add("col-md-2");
+    columnNumber.classList.add("card");
+
+    columnNumber.classList.add(className);
+    valueOut.appendChild(columnNumber);
 
 
 
-    /* CARDS */
-    const cardNumber = document.createElement("div");
-    cardNumber.textContent = text;
 
-    cardNumber.classList.add("col-md-2");
-    cardNumber.classList.add(className);
+    
+    columnNumber.classList.add("col-2");
+    columnNumber.classList.add("card");
 
-    cardNumber.classList.add("col-2");
-    cardNumber.classList.add(className);
+    columnNumber.classList.add(className);
+    valueOut.appendChild(columnNumber);
 
-    valueOut.appendChild(cardNumber);
+    
+
+    
 
     
     /* const column = document.createElement("col-md-1");
     column.classList.add("card"); */
-    
 
 }
 
