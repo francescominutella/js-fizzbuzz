@@ -53,6 +53,12 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
         text = text + "FizzBuzz";
         className = className + "Fizzbuzz";
 
+        columnNumber.insertAdjacentHTML('beforeend',
+        `
+        <div class="col-md-2 card Number col-2 bg-danger text-white">${text}</div>
+        `
+        )
+
 
     } else if (i % 3 === 0) {
         console.log("Fizz"); // each number multiples of 3 must turn "Fizz"
@@ -80,23 +86,15 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
     columnNumber.classList.add("card");
 
     columnNumber.classList.add(className);
-    valueOut.appendChild(columnNumber);
-
-
-
-
     
     columnNumber.classList.add("col-2");
     columnNumber.classList.add("card");
 
     columnNumber.classList.add(className);
+    
     valueOut.appendChild(columnNumber);
 
-    
 
-    
-
-    
     /* const column = document.createElement("col-md-1");
     column.classList.add("card"); */
 
