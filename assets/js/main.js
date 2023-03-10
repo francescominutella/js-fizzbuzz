@@ -46,29 +46,29 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
     if (i % 3 === 0 && i % 5 === 0) {
         console.log("FizzBuzz"); // each number multiples of 3 AND 5 must turn "FizzBuzz"
 
-        const div = document.createElement("div");
+        const div = document.createElement("col-md-1");
         div.textContent = "FizzBuzz";
         tableNumber.appendChild(div);// add in page "FizzBuzz"
-        
+
 
     } else if (i % 3 === 0) {
         console.log("Fizz"); // each number multiples of 3 must turn "Fizz"
 
-        const div = document.createElement("div");
+        const div = document.createElement("col-md-1");
         div.textContent = "Fizz";
         tableNumber.appendChild(div);// add in page "Fizz"
 
     } else if (i % 5 === 0) {
         console.log("Buzz"); // each number multiples of 5 must turn "Buzz"
 
-        const div = document.createElement("div");
+        const div = document.createElement("col-md-1");
         div.textContent = "Buzz";
         tableNumber.appendChild(div);// add in page "Buzz"
 
     } else {
         console.log(i);// each other numbers
 
-        const div = document.createElement("div");
+        const div = document.createElement("col-md-1");
         div.textContent = i;
         tableNumber.appendChild(div);// add in page each numbers
     }
