@@ -50,6 +50,7 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
     if (i % 3 === 0 && i % 5 === 0) {
         console.log("FizzBuzz"); // each number multiples of 3 AND 5 must turn "FizzBuzz"
 
+        text = text + "FizzBuzz";
         className = className + "Fizzbuzz";
 
     } else if (i % 3 === 0) {
@@ -76,7 +77,7 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
     const cardNumber = document.createElement("div");
     cardNumber.textContent = text;
 
-    cardNumber.classList.add("col");
+    cardNumber.classList.add("col-md-1");
     cardNumber.classList.add(className);
 
     valueOut.appendChild(cardNumber);
