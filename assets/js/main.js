@@ -43,13 +43,13 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 for (let i = 1; i <= 50; i++) { // use "%" to calculate multiples
 
     if (i % 3 === 0 && i % 5 === 0) {
-      // each number multiples of 3 AND 5 must turn "FizzBuzz"
+      console.log("FizzBuzz"); // each number multiples of 3 AND 5 must turn "FizzBuzz"
 
     } else if (i % 3 === 0) {
-      // each number multiples of 3 must turn "Fizz"
+      console.log("Fizz"); // each number multiples of 3 must turn "Fizz"
 
     } else if (i % 5 === 0) {
-      // each number multiples of 5 must turn "Buzz"
+      console.log("Buzz"); // each number multiples of 5 must turn "Buzz"
 
     } else {
       console.log(i);// each other numbers
