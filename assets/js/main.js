@@ -68,14 +68,24 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
         text = i;
         className = className + "Number";
     }
-    
+
+
+
+
+    /* CARDS */
     const cardNumber = document.createElement("div");
     cardNumber.textContent = text;
 
-    cardNumber.classList.add("card");
+    cardNumber.classList.add("col");
     cardNumber.classList.add(className);
 
     valueOut.appendChild(cardNumber);
 
+    
+    /* const column = document.createElement("col-md-1");
+    column.classList.add("card"); */
+    
 
 }
+
+
