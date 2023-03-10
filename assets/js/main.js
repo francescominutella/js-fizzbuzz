@@ -41,7 +41,7 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 */
 const tableNumber = document.getElementById("tableNumber");
 
-for (let i = 1; i <= 50; i++) { // use "%" to calculate multiples
+for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
 
     if (i % 3 === 0 && i % 5 === 0) {
         console.log("FizzBuzz"); // each number multiples of 3 AND 5 must turn "FizzBuzz"
