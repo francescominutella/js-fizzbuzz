@@ -40,6 +40,7 @@ Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot f
 8. display in console
 */
 const tableNumber = document.getElementById("tableNumber");
+const valueOut = document.getElementById("valueOut");
 
 for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
 
@@ -72,4 +73,8 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
         div.textContent = i;
         tableNumber.appendChild(div);// add in page each numbers
     }
+
+    const cardNumber = document.createElement("div");
+    cardNumber.classList.add("card");
+    valueOut.appendChild(cardNumber);
 }
