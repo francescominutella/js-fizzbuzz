@@ -47,6 +47,9 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
 
     let text = "";
     let className = "";
+    let bgColor = "";
+    let borderColor = "";
+    let fontSize = "";
 
     if (i % 3 === 0 && i % 5 === 0) {
         console.log("FizzBuzz"); // each number multiples of 3 AND 5 must turn "FizzBuzz"
@@ -54,8 +57,8 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
         text = text + "FizzBuzz";
         className = className + "Fizzbuzz";
 
-        /* columnNumber.style.backgroundColor = bgColor; */
-        var bgColor = "rgba(27, 114, 232, 1)";
+        bgColor = "rgba(27, 114, 232, 1)";
+        borderColor = "rgb(22, 223, 28)";
 
     } else if (i % 3 === 0) {
         console.log("Fizz"); // each number multiples of 3 must turn "Fizz"
@@ -63,8 +66,8 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
         text = text + "Fizz";
         className = className + "Fizz";
 
-        /* columnNumber.style.backgroundColor = bgColor; */
-        var bgColor = "rgb(212, 8, 243)";
+        bgColor = "rgb(55, 42, 151)";
+        borderColor = "rgb(160, 216, 229)";
 
     } else if (i % 5 === 0) {
         console.log("Buzz"); // each number multiples of 5 must turn "Buzz"
@@ -72,15 +75,15 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
         text = text + "Buzz";
         className = className + "Buzz";
 
-        /* columnNumber.style.backgroundColor = bgColor; */
-        var bgColor = "rgb(22, 223, 28)";
+        bgColor = "rgb(22, 223, 28)";
+        borderColor = "rgba(27, 114, 232, 1)";
 
     } else if (text === "") {
         text = i;
         className = className + "Number";
 
-        /* columnNumber.style.backgroundColor = bgColor; */
-        var bgColor = "rgba(255, 143, 0, 1)";
+        bgColor = "rgb(160, 216, 229)";
+        
     }
 
     /* COLUMNS */
@@ -105,6 +108,11 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
     columnNumber.style.backgroundColor = bgColor;
 
     valueOut.appendChild(columnNumber);
+
+    columnNumber.style.borderColor = borderColor;
+    columnNumber.style.borderWidth = "3px";
+    columnNumber.style.borderStyle = "solid";
+    columnNumber.style.fontSize = fontSize;
 
 
     /* const column = document.createElement("col-md-1");

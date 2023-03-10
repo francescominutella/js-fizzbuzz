@@ -5,9 +5,9 @@ body{
 
 :root {
     --color-FizzBuzz: rgba(27, 114, 232, 1);
-    --color-Fizz: rgb(212, 8, 243);
+    --color-Fizz: rgb(55, 42, 151);
     --color-Buzz: rgb(22, 223, 28);
-    --color-number: rgba(255, 143, 0, 1);
+    --color-number: rgb(160, 216, 229);
 
 }
 
