@@ -53,12 +53,8 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
         text = text + "FizzBuzz";
         className = className + "Fizzbuzz";
 
-        columnNumber.insertAdjacentHTML('beforeend',
-        `
-        <div class="col-md-2 card Number col-2 bg-danger text-white">${text}</div>
-        `
-        )
-
+        /* columnNumber.style.backgroundColor = bgColor; */
+        var bgColor = "green";
 
     } else if (i % 3 === 0) {
         console.log("Fizz"); // each number multiples of 3 must turn "Fizz"
@@ -66,15 +62,24 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
         text = text + "Fizz";
         className = className + "Fizz";
 
+        /* columnNumber.style.backgroundColor = bgColor; */
+        var bgColor = "yellow";
+
     } else if (i % 5 === 0) {
         console.log("Buzz"); // each number multiples of 5 must turn "Buzz"
 
         text = text + "Buzz";
         className = className + "Buzz";
 
+        /* columnNumber.style.backgroundColor = bgColor; */
+        var bgColor = "red";
+
     } else if (text === "") {
         text = i;
         className = className + "Number";
+
+        /* columnNumber.style.backgroundColor = bgColor; */
+        var bgColor = "pink";
     }
 
     /* COLUMNS */
@@ -92,6 +97,8 @@ for (let i = 1; i <= 100; i++) { // use "%" to calculate multiples
 
     columnNumber.classList.add(className);
     
+    columnNumber.style.backgroundColor = bgColor;
+
     valueOut.appendChild(columnNumber);
 
 
